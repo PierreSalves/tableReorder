@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+ * Plugin Name: orderedTables
+ * Description: Este plugin permite que as linhas de uma tabela HTML sejam reordenadas conforme a coluna selecionada, sem repaginar a tela.
+ * Uso: Adicione a classe 'table-ordered' às tabelas HTML para ativar o plugin.
+ * Dependências: {
+ *   jQuery: 1.10.2,
+ *   bootstrap-icons: 1.11.3
+ * }
+ * Autor: Pierre Sanches Alves
+ * Copyright: 2024 Pierre Sanches Alves
+ * Licença: MIT
+ */
+
+table.table-ordered thead tr:nth-child(1) th:not([colspan]) {
+    cursor: pointer;
+}
+
+table.table-ordered thead tr:nth-child(1) th:not([colspan]):hover {
+    opacity: 0.7;
+}
+
+.bg-blue {
+    background: #3598dc !important;
+    border-color: #4b8df8 !important;
+    color: #fff !important;
+}
+
+.bg-blue-tropaz {
+    background: #2b579a !important;
+    background: #244c88 !important;
+    color: #fff !important;
+}
+
+.bg-red {
+    background-color: #e02222 !important;
+    border-color: #cf1d1d !important;
+    color: #fff !important;
+}
+
+.bg-yellow {
+    background-color: #ffb848 !important;
+    border-color: #eba941 !important;
+    color: #fff !important;
+}
+
+.bg-green {
+    background-color: #35aa47 !important;
+    border-color: #309e41 !important;
+    color: #fff !important;
+}
+
+.bg-purple {
+    background-color: #852b99 !important;
+    border-color: #79268b !important;
+    color: #fff !important;
+}
+
+.bg-dark {
+    background-color: #555555 !important;
+    border-color: #474747 !important;
+    color: #fff !important;
+}
+
+.bg-grey {
+    background-color: #eeeeee;
+    border-color: #929292;
+    color: #444;
+}
+
+.bg-light-blue {
+    background-color: #d9edf7 !important;
+    border-color: #cae3f3 !important;
+    color: #65727a;
+}
+
+
+
