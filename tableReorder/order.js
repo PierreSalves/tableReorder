@@ -71,20 +71,20 @@ function sortTable(table, columnIndex, isAsc) {
         var dateB = parseDate(B);
 
         if (dateA && dateB) {
-            return isAsc ? dateA - dateB : dateB - dateA;
+            return isAsc ? dateB - dateA : dateA - dateB;
         }
 
         var numA = parseFloat(A);
         var numB = parseFloat(B);
 
         if (!isNaN(numA) && !isNaN(numB)) {
-            return isAsc ? numA - numB : numB - numA;
+            return isAsc ? numB - numA : numA - numB;
         } else {
             if (A < B) {
-                return isAsc ? -1 : 1;
+                return isAsc ? 1 : -1;
             }
             if (A > B) {
-                return isAsc ? 1 : -1;
+                return isAsc ? -1 : 1;
             }
             return 0;
         }
